@@ -17,14 +17,18 @@ https://discord.gg/TnkPDDq
 
 ```
 ```
-#### You can also read this README in PORTUGUESE 
-[CLICK HERE](https://github.com/Dayil/BetterDiscord/blob/master/README.pt.md)
+#### Você também pode ler este README em PORTUGUÊS
+[CLIQUE AQUI](https://github.com/Dayil/BetterDiscord/blob/master/README.pt.md)
 ```
 ```
 
 # BetterDiscord Dayil's plugins/themes Repo.
 My plugins &amp; themes for enhance the Discord desktop app
 
+
+## Dependencies 
+* [Oficial Discord App](https://discord.com/) by Discord
+* [Betterdiscord App](https://betterdiscord.net/home/) by Jiiks
 
 ## Install/Uninstall:
 
