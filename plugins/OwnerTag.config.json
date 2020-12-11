@@ -1,0 +1,20 @@
+{
+	"inputs": {
+		"ownAdminTagName": "Admin",
+		"ownManagementTagName": "Management",
+		"ownTagName": "Owner"
+	},
+	"settings": {
+		"addForAdmins": false,
+		"addForManagement": false,
+		"addInChatWindow": true,
+		"addInMemberList": true,
+		"addInUserPopout": true,
+		"addInUserProfile": true,
+		"hideNativeCrown": true,
+		"ignoreBotAdmins": false,
+		"useBlackFont": false,
+		"useCrown": false,
+		"useRoleColor": true
+	}
+}

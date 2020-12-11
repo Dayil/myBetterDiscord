@@ -1,0 +1,8 @@
+{
+	"settings": {
+		"addMutualGuild": true,
+		"addSearchbar": true,
+		"addSortOptions": true,
+		"addTotalAmount": true
+	}
+}
