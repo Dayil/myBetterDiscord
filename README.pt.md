@@ -18,7 +18,7 @@ https://discord.gg/TnkPDDq
 ```
 ```
 #### You can also read this README in ENGLISH
-[CLICK HERE](https://github.com/Dayil/BetterDiscord/blob/master/README.en.md)
+[CLICK HERE](https://github.com/Dayil/BetterDiscord/blob/master/README.md)
 ```
 ```
 
