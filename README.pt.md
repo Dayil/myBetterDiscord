@@ -13,7 +13,6 @@
     </a>
 </p>
 
-https://discord.gg/TnkPDDq
 
 ```
 ```
