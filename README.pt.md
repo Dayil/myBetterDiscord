@@ -2,7 +2,7 @@
 
 
 <p>
-    <a href="https://github.com/Dayil/BetterDiscord/blob/main/LICENSE">
+    <a href="https://github.com/Dayil/myBetterDiscord/blob/main/LICENSE">
         <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License">
     </a>
 </p>
@@ -18,7 +18,7 @@ https://discord.gg/TnkPDDq
 ```
 ```
 #### You can also read this README in ENGLISH
-[CLICK HERE](https://github.com/Dayil/BetterDiscord/blob/master/README.md)
+[CLICK HERE](https://github.com/Dayil/myBetterDiscord/blob/master/README.md)
 ```
 ```
 
