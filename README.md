@@ -13,8 +13,6 @@
     </a>
 </p>
 
-https://discord.gg/TnkPDDq
-
 ```
 ```
 #### Você também pode ler este README em PORTUGUÊS
