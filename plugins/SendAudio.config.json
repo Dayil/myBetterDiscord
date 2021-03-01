@@ -4,9 +4,9 @@
         "hasShownChangelog": true
     },
     "settings": {
-        "preview": true,
-        "nitro": true,
-        "devices": "default",
+        "preview": false,
+        "nitro": false,
+        "devices": "1fb0120f01e9ac77fa8584b6941a0a1edd0774d088529acf95579666ed7e8d91",
         "mimetype": "audio/mp3"
     }
 }

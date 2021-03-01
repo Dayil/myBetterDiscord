@@ -14,12 +14,12 @@ module.exports = (_ => {
 		"info": {
 			"name": "NotificationSounds",
 			"author": "DevilBro",
-			"version": "3.5.7",
+			"version": "3.5.9",
 			"description": "Allow you to replace the native sounds of Discord with your own"
 		},
 		"changeLog": {
 			"fixed": {
-				"New Settings Menu": "Fixed for new settings menu"
+				"Incoming Call": "Works again, you'll most likely need to reload Discord (Ctrl + R) for it to be fixed"
 			}
 		}
 	};
@@ -28,38 +28,37 @@ module.exports = (_ => {
 		getName () {return config.info.name;}
 		getAuthor () {return config.info.author;}
 		getVersion () {return config.info.version;}
-		getDescription () {return config.info.description;}
+		getDescription () {return `The Library Plugin needed for ${config.info.name} is missing. Open the Plugin Settings to download it. \n\n${config.info.description}`;}
 		
-		load() {
+		downloadLibrary () {
+			require("request").get("https://mwittrien.github.io/BetterDiscordAddons/Library/0BDFDB.plugin.js", (e, r, b) => {
+				if (!e && b && b.indexOf(`* @name BDFDB`) > -1) require("fs").writeFile(require("path").join(BdApi.Plugins.folder, "0BDFDB.plugin.js"), b, _ => BdApi.showToast("Finished downloading BDFDB Library", {type: "success"}));
+				else BdApi.alert("Error", "Could not download BDFDB Library Plugin, try again later or download it manually from GitHub: https://github.com/mwittrien/BetterDiscordAddons/tree/master/Library/");
+			});
+		}
+		
+		load () {
 			if (!window.BDFDB_Global || !Array.isArray(window.BDFDB_Global.pluginQueue)) window.BDFDB_Global = Object.assign({}, window.BDFDB_Global, {pluginQueue: []});
 			if (!window.BDFDB_Global.downloadModal) {
 				window.BDFDB_Global.downloadModal = true;
-				BdApi.showConfirmationModal("Library Missing", `The library plugin needed for ${config.info.name} is missing. Please click "Download Now" to install it.`, {
+				BdApi.showConfirmationModal("Library Missing", `The Library Plugin needed for ${config.info.name} is missing. Please click "Download Now" to install it.`, {
 					confirmText: "Download Now",
 					cancelText: "Cancel",
 					onCancel: _ => {delete window.BDFDB_Global.downloadModal;},
 					onConfirm: _ => {
 						delete window.BDFDB_Global.downloadModal;
-						require("request").get("https://mwittrien.github.io/BetterDiscordAddons/Library/0BDFDB.plugin.js", (e, r, b) => {
-							if (!e && b && b.indexOf(`* @name BDFDB`) > -1) require("fs").writeFile(require("path").join(BdApi.Plugins.folder, "0BDFDB.plugin.js"), b, _ => {});
-							else BdApi.alert("Error", "Could not download BDFDB library plugin, try again some time later.");
-						});
+						this.downloadLibrary();
 					}
 				});
 			}
 			if (!window.BDFDB_Global.pluginQueue.includes(config.info.name)) window.BDFDB_Global.pluginQueue.push(config.info.name);
 		}
-		start() {this.load();}
-		stop() {}
-		getSettingsPanel() {
+		start () {this.load();}
+		stop () {}
+		getSettingsPanel () {
 			let template = document.createElement("template");
-			template.innerHTML = `<div style="color: var(--header-primary); font-size: 16px; font-weight: 300; white-space: pre; line-height: 22px;">The library plugin needed for ${config.info.name} is missing.\nPlease click <a style="font-weight: 500;">Download Now</a> to install it.</div>`;
-			template.content.firstElementChild.querySelector("a").addEventListener("click", _ => {
-				require("request").get("https://mwittrien.github.io/BetterDiscordAddons/Library/0BDFDB.plugin.js", (e, r, b) => {
-					if (!e && b && b.indexOf(`* @name BDFDB`) > -1) require("fs").writeFile(require("path").join(BdApi.Plugins.folder, "0BDFDB.plugin.js"), b, _ => {});
-					else BdApi.alert("Error", "Could not download BDFDB library plugin, try again some time later.");
-				});
-			});
+			template.innerHTML = `<div style="color: var(--header-primary); font-size: 16px; font-weight: 300; white-space: pre; line-height: 22px;">The Library Plugin needed for ${config.info.name} is missing.\nPlease click <a style="font-weight: 500;">Download Now</a> to install it.</div>`;
+			template.content.firstElementChild.querySelector("a").addEventListener("click", this.downloadLibrary);
 			return template.content.firstElementChild;
 		}
 	} : (([Plugin, BDFDB]) => {
@@ -189,7 +188,7 @@ module.exports = (_ => {
 		};
 	
 		return class NotificationSounds extends Plugin {
-			onLoad() {
+			onLoad () {
 				audios = {};
 				choices = {};
 				firedEvents = {};
@@ -200,16 +199,10 @@ module.exports = (_ => {
 					}
 				};
 				
-				this.patchedModules = {
-					after: {
-						Shakeable: "render"
-					}
-				};
-				
 				this.patchPriority = 10;
 			}
 			
-			onStart() {
+			onStart () {
 				if (BDFDB.LibraryModules.PlatformUtils.embedded) {
 					let change = _ => {
 						if (window.navigator.mediaDevices && window.navigator.mediaDevices.enumerateDevices) {
@@ -321,7 +314,7 @@ module.exports = (_ => {
 				this.forceUpdateAll();
 			}
 			
-			onStop() {
+			onStop () {
 				for (let type in createdAudios) if (createdAudios[type]) createdAudios[type].stop();
 			}
 
@@ -645,26 +638,7 @@ module.exports = (_ => {
 				createdAudios["call_calling"] = BDFDB.LibraryModules.SoundUtils.createSound("call_calling");
 				volumes = BDFDB.DataUtils.get(this, "volumes");
 				BDFDB.PatchUtils.forceAllUpdates(this);
-			}
-		
-			processShakeable (e) {
-				if (e.returnvalue && BDFDB.ArrayUtils.is(e.returnvalue.props.children)) {
-					let child = e.returnvalue.props.children.find(n => {
-						let string = n && n.type && n.type.toString();
-						return string && string.indexOf("call_ringing_beat") > -1 && string.indexOf("call_ringing") > -1 && string.indexOf("hasIncomingCalls") > -1;
-					});
-					if (child) {
-						let index = e.returnvalue.props.children.indexOf(child);
-						if (repatchIncoming) {
-							e.returnvalue.props.children[index] = null;
-							BDFDB.TimeUtils.timeout(_ => {
-								repatchIncoming = false;
-								BDFDB.ReactUtils.forceUpdate(BDFDB.ReactUtils.findOwner(document.querySelector(BDFDB.dotCN.app), {name: "App", up: true}))
-							});
-						}
-						else e.returnvalue.props.children[index] = BDFDB.ReactUtils.createElement(e.returnvalue.props.children[index].type, {});
-					}
-				}
+				BDFDB.DiscordUtils.rerenderAll();
 			}
 			
 			loadAudios () {

@@ -29,7 +29,11 @@
 			"big": true
 		}
 	},
+	"playerState": {
+		"maximized": false
+	},
 	"settings": {
-		"addTimeline": true
+		"addTimeline": true,
+		"doubleBack": true
 	}
 }

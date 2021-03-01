@@ -13,12 +13,6 @@
             "ownerId": "235873764435427328"
         },
         {
-            "id": "419670993204674561",
-            "name": "💀 The Listeners | Hacking 📡",
-            "iconURL": "https://cdn.discordapp.com/icons/419670993204674561/a_f1e8563f29a453dd508da576b19649f6.webp?size=128",
-            "ownerId": "260130829311672320"
-        },
-        {
             "id": "508786159292252181",
             "name": "SBT",
             "iconURL": "https://cdn.discordapp.com/icons/508786159292252181/c46750f6b7791f0c587ef71291b38b47.webp?size=128",
@@ -41,12 +35,6 @@
             "name": "Pasto",
             "iconURL": "https://cdn.discordapp.com/icons/756983712884981831/bc65986c14b147fe052c8a0fbd0cc9d8.webp?size=128",
             "ownerId": "342841521248272395"
-        },
-        {
-            "id": "769558915138322462",
-            "name": "Kriminal Familia (KF)",
-            "iconURL": "https://cdn.discordapp.com/icons/769558915138322462/5a8461609a28ea7fdef9165ab8209f98.webp?size=128",
-            "ownerId": "746059855508275341"
         }
     ],
     "friendCache": [
@@ -60,7 +48,7 @@
             "id": "333822869987655682",
             "invalid": false,
             "tag": "Pigi#4076",
-            "avatarURL": "https://cdn.discordapp.com/avatars/333822869987655682/8d0719ff49156ab87b7f03f8cc9b091a.png?size=128"
+            "avatarURL": "https://cdn.discordapp.com/avatars/333822869987655682/786a4991116760c89a4d37e77813c077.png?size=128"
         },
         {
             "id": "364938409459843072",
@@ -72,7 +60,7 @@
             "id": "410988268943835137",
             "invalid": false,
             "tag": "Caveiron#7529",
-            "avatarURL": "https://cdn.discordapp.com/avatars/410988268943835137/a9ec962fb7eac63cbddc429eb282aea6.png?size=128"
+            "avatarURL": "https://cdn.discordapp.com/avatars/410988268943835137/5c059babfed666ed4c4dedc3ff11d12d.png?size=128"
         },
         {
             "id": "429699913916612629",
@@ -90,7 +78,13 @@
             "id": "503369140199751680",
             "invalid": false,
             "tag": "Okami 熊谷#4524",
-            "avatarURL": "https://cdn.discordapp.com/avatars/503369140199751680/9fdf27bdd567c733cc8b2a01eae994af.png?size=128"
+            "avatarURL": "https://cdn.discordapp.com/avatars/503369140199751680/c1911f97945a3c5fccf9b2a5140fb017.png?size=128"
+        },
+        {
+            "id": "691419863931027457",
+            "invalid": false,
+            "tag": "dnrcart#8351",
+            "avatarURL": "https://cdn.discordapp.com/avatars/691419863931027457/40cf64b4ef405acc4fb5beaa5d7eb84c.png?size=128"
         }
     ],
     "removedGuildHistory": [
@@ -99,6 +93,18 @@
             "name": "Game3rb",
             "iconURL": "https://cdn.discordapp.com/icons/374172840691367948/a_7c3648320443cce367836f55099dcf43.webp?size=128",
             "ownerId": "268511969227571210"
+        },
+        {
+            "id": "419670993204674561",
+            "name": "💀 The Listeners | Hacking 📡",
+            "iconURL": "https://cdn.discordapp.com/icons/419670993204674561/a_f1e8563f29a453dd508da576b19649f6.webp?size=128",
+            "ownerId": "260130829311672320"
+        },
+        {
+            "id": "769558915138322462",
+            "name": "Kriminal Familia (KF)",
+            "iconURL": "https://cdn.discordapp.com/icons/769558915138322462/5a8461609a28ea7fdef9165ab8209f98.webp?size=128",
+            "ownerId": "746059855508275341"
         }
     ],
     "removedFriendHistory": []

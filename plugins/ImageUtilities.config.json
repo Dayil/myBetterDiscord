@@ -21,16 +21,17 @@
 	"settings": {
 		"addDetails": true,
 		"addEmojiEntry": true,
+		"addGroupIconEntry": true,
 		"addGuildIconEntry": true,
 		"addUserAvatarEntry": true,
 		"enableCopyImg": true,
 		"enableGallery": true,
 		"enableSaveImg": true,
 		"enableZoom": true,
+		"pixelZoom": false,
 		"resizeImage": true,
-		"showAsHeader": true,
-		"showOnHover": false,
-		"useChromium": false
+		"showAsHeader": false,
+		"showOnHover": false
 	},
 	"zoomSettings": {
 		"lensesize": 200,
