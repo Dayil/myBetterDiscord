@@ -1,9 +1,0 @@
-{
-	"amounts": {
-		"maxFileSize": 10
-	},
-	"settings": {
-		"addOpenButton": true,
-		"onDemand": false
-	}
-}
