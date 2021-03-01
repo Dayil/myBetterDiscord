@@ -1,0 +1,10 @@
+{
+    "currentVersionInfo": {
+        "version": "2.1.1",
+        "hasShownChangelog": true
+    },
+    "settings": {
+        "showModal": true,
+        "showDeskNotifs": true
+    }
+}
