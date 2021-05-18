@@ -1,0 +1,84 @@
+{
+    "guildCache": [
+        {
+            "id": "235875490764685314",
+            "name": "Taberna do Dan • Notorious",
+            "iconURL": "https://cdn.discordapp.com/icons/235875490764685314/a67b3f770935350e5737d1cfba2eb7ee.webp?size=128",
+            "ownerId": "235873764435427328"
+        },
+        {
+            "id": "820278437738315787",
+            "name": "AIO",
+            "iconURL": "https://cdn.discordapp.com/icons/820278437738315787/1df0fcab555b28cad28ba0c2f9791f72.webp?size=128",
+            "ownerId": "820215348161937480"
+        },
+        {
+            "id": "825426376333066342",
+            "name": "dropped",
+            "iconURL": "https://cdn.discordapp.com/icons/825426376333066342/f68e1af9f87718c5ce3092f20681e21d.webp?size=128",
+            "ownerId": "820215348161937480"
+        },
+        {
+            "id": "826582907145551872",
+            "name": "Twick - Follow Botting",
+            "iconURL": "https://cdn.discordapp.com/icons/826582907145551872/a_29f46a59ee0be92099a3170a4aec884c.webp?size=128",
+            "ownerId": "287800980379009024"
+        },
+        {
+            "id": "826806908026880040",
+            "name": "Twitch Party",
+            "iconURL": "https://cdn.discordapp.com/icons/826806908026880040/3447c04607381f2061e5557a15b19af3.webp?size=128",
+            "ownerId": "820215348161937480"
+        },
+        {
+            "id": "826843897811697664",
+            "name": "Twitch Arena",
+            "iconURL": "https://cdn.discordapp.com/icons/826843897811697664/4b604068a33167d95f00a7badd35e251.webp?size=128",
+            "ownerId": "820215348161937480"
+        },
+        {
+            "id": "826964138600562689",
+            "name": "Bolts",
+            "iconURL": "https://cdn.discordapp.com/icons/826964138600562689/a_a52ff7a22658d4db2beb38366186112d.webp?size=128",
+            "ownerId": "805928134956023888"
+        },
+        {
+            "id": "828033125489049649",
+            "name": "Twitch Follows v2",
+            "iconURL": "https://cdn.discordapp.com/icons/828033125489049649/a_a4e39a3ab8841884266f3509237053d4.webp?size=128",
+            "ownerId": "823013342099537941"
+        },
+        {
+            "id": "829483158729654342",
+            "name": "YouTube Subscriptions",
+            "iconURL": "https://cdn.discordapp.com/icons/829483158729654342/a_7c6465c8a85784f4d469683cea4705ba.webp?size=128",
+            "ownerId": "805171026203246654"
+        },
+        {
+            "id": "830570921407414274",
+            "name": "Step Alts",
+            "iconURL": "https://cdn.discordapp.com/icons/830570921407414274/a_579cd57abeb7cbeea94ca76562a8ef18.webp?size=128",
+            "ownerId": "825457548068651038"
+        },
+        {
+            "id": "831630193776525312",
+            "name": "Free Nitro",
+            "iconURL": "https://cdn.discordapp.com/icons/831630193776525312/5524bb9f20adc608d1ffbf4d7805d341.webp?size=128",
+            "ownerId": "724676181676392455"
+        },
+        {
+            "id": "834846073322340453",
+            "name": "🌴 Free Twitch Followers",
+            "iconURL": "https://cdn.discordapp.com/icons/834846073322340453/0d7fcf8bc061943898eefda987f8b9f0.webp?size=128",
+            "ownerId": "527085931778277376"
+        }
+    ],
+    "friendCache": [
+        {
+            "id": "235873764435427328",
+            "invalid": false,
+            "tag": "Dayil#3105",
+            "avatarURL": "https://cdn.discordapp.com/avatars/235873764435427328/c3ede70619d4caed91bee5f2d61610a2.png?size=128"
+        }
+    ]
+}
