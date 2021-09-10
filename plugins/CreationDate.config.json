@@ -1,0 +1,31 @@
+{
+	"amounts": {
+		"maxDaysAgo": 0
+	},
+	"choices": {
+		"creationDateLang": "$discord"
+	},
+	"dates": {
+		"creationDate": {}
+	},
+	"formats": {
+		"ownFormat": "$hour: $minute: $second, $day.$month.$year"
+	},
+	"general": {
+		"displayText": true
+	},
+	"places": {
+		"userPopout": true,
+		"userProfile": true
+	},
+	"settings": {
+		"addInUserPopout": true,
+		"addInUserProfil": true,
+		"cutSeconds": false,
+		"displayDate": true,
+		"displayText": true,
+		"displayTime": true,
+		"forceZeros": false,
+		"otherOrder": false
+	}
+}

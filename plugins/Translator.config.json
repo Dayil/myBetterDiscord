@@ -1,0 +1,27 @@
+{
+	"choices": {
+		"received": {
+			"input": "en",
+			"output": "pt"
+		},
+		"sent": {
+			"input": "auto",
+			"output": "$discord"
+		}
+	},
+	"engines": {
+		"translator": "googleapi",
+		"backup": "----"
+	},
+	"exceptions": {
+		"wordStart": [
+			"!"
+		]
+	},
+	"general": {
+		"addTranslateButton": true,
+		"sendOriginalMessage": false,
+		"showOriginalMessage": true,
+		"usePerChatTranslation": true
+	}
+}
